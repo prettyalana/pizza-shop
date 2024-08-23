@@ -15,22 +15,22 @@
             <h1>Ciao Ciao Pizza Shop</h1>
             <div class="navbar">
                 <nav>
-                    <a href="#">Homepage</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Reservations</a>
+                    <a href="#">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="#">About</a>
+                    <a href="sign-up.html">Account</a>
                 </nav>
             </div>
             <h2 class="main-text">WELCOME</h2>
-            <p>Healthy High Quality Fine Dining</p>
+            <h3>Healthy High Quality Fine Dining</h3>
             <div class="CTA">
-                <a href="#">BOOK A TABLE</a>
+                <a href="#reservation">BOOK A TABLE</a>
             </div>
         </header>
     </main>
-    <section>
-        <h3>MAKE A RESERVATION</h3>
-        <form action="https://formspree.io/f/xqkojzeq" method="post">
+    <section class="reservation">
+        <h4>MAKE A RESERVATION</h4>
+        <form action="https://formspree.io/f/xqazgknq" method="post">
             <input type="text" placeholder="Name" name="User_name" />
             <input type="text" placeholder="Email" required name="User_email" />
             <input type="tel" placeholder="Phone number" name="Phone_number">
@@ -43,11 +43,14 @@
         <div class="footer-section">
             <h5>Address</h5>
             <p> 120 Lorem ipsum dolor</p>
+            <p> Amet Consectetur, Adipisicing</p>
+            <p>00000</p>
         </div>
         <div class="footer-section">
             <h5>Reservation</h5>
             <p class="phone-number">000-000-0000</p>
             <p class="email">ciaociao@ciao.com</p>
+            <a id="reservation-link" href="#reservation">Reserve your table today!</a>
         </div>
         <div class="footer-section">
             <h5>Open Hours</h5>

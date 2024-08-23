@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciao Ciao Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="menu-header">
+            Ciao Ciao Menu
+        </h1>
+    </header>
+    <hr>
+    <div class="specialty-container">
+        <div class="tab">
+            <button class="tablinks" onclick="openMenu(event, 'pizza')">Ciao Ciao Specialty Pizzas</button>
+            <button class="tablinks" onclick="openMenu(event, 'toppings')">Build Your Own Pizza</button>
+            <button class="tablinks" onclick="openMenu(event, 'pasta-and-salad')">Pasta and Salads</button>
+            <button class="tablinks" onclick="openMenu(event, 'beverages')">Beverages</button>
+        </div>
+        <div class="tab-container">
+            <div id="pizza" class="tabcontent">
+                <ul>
+                    <li>Gyros Pizza</li>
+                    <li>Pesto Pizza</li>
+                    <li>Sicily Pizza</li>
+                    <li>Spicy Pizza</li>
+                </ul>
+            </div>
+            <div id="toppings" class="tabcontent">
+                <h3>Toppings</h3>
+                <ul>
+                    <li>Spicy Italian Turkey Sausage</li>
+                    <li>Steak</li>
+                    <li>Chicken</li>
+                    <li>Double Cheese</li>
+                    <li>Fresh Garlic</li>
+                    <li>Fresh Pesto</li>
+                    <li>Basil</li>
+                    <li>Oregano</li>
+                    <li>Spinach</li>
+                    <li>Kale</li>
+                </ul>
+            </div>
+            <div id="pasta-and-salad" class="tabcontent">
+                <div class="pastas">
+                    <h3>Pasta</h3>
+                    <ul>
+                        <li>Grilled Chicken Fettuccine Alfredo</li>
+                        <li>Spaghetti and Meatballs</li>
+                    </ul>
+                </div>
+                <div class="salads">
+                    <h3>Salad</h3>
+                    <ul>
+                        <li>Chicken Caesar Salad</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="beverages" class="tabcontent">
+                <div class="drinks">
+                    <ul>
+                        <li>Water</li>
+                        <li>Freshly Squeezed Lemonade</li>
+                        <li>Strawberry Lemonade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="pizza-video">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/MtA_k_Sl9Fg?si=FV5iTXQSlnvbWClO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div> -->
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>
