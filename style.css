@@ -37,7 +37,6 @@ header {
   align-items: center;
   font-size: 1rem;
   position: relative;
-  /* border: 5px solid red; */
 }
 
 h1,
@@ -75,7 +74,6 @@ nav a {
   margin: 250px 0 0 0;
   font-size: 6em;
   font-weight: 900;
-  /* border: 5px solid blue; */
 }
 .CTA {
   border: 5px solid black;
@@ -128,56 +126,92 @@ footer {
   color: white;
 }
 #reservation-link {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 #menu-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 20px;
 }
 .specialty-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    margin: 20px;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  height: 100vh;
 }
 .tab {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .tab button {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    padding: 12px 16px;
-    transition: 0.3s;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  transition: 0.3s;
 }
 .tab button:hover {
-    background-color: wheat;
+  background-color: wheat;
 }
 .tab-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    font-size: 1.5rem;
-    text-align: center; 
+  display: none;
+  padding: 6px 12px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 ul {
-    list-style-type: circle;
+  list-style-type: none;
 }
-.pizza-video {
-    display: flex;
-    justify-content: center;
+.search-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 10px;
+  overflow: hidden;
+}
+.search-container::before {
+  content: "";
+  background-image: url(https://images.pexels.com/photos/27650917/pexels-photo-27650917/free-photo-of-a-pizza-on-a-marble-table-with-cheese-and-sauce.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+.menu-container {
+  position: relative;
+}
+.menu-container::before {
+  content: "";
+  background-image: url(https://img.freepik.com/free-photo/neapolitan-pizza-with-salami-arugula-tomatoes-sprinkled-with-cheese-wooden-board-tablecloth-cell_78826-2350.jpg?t=st=1724461509~exp=1724465109~hmac=f6ebb6034201fc572644e1b5c8e4f3c3544e59056ff0c89b94902e71fcbfb795&w=1800);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  z-index: -1;
 }
