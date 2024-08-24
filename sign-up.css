@@ -7,7 +7,7 @@
 }
 
 body {
-  background: rgb(80, 80, 80);
+  background-image: url(https://img.freepik.com/free-photo/fantastic-scene-with-flour-fresh-ingredients_23-2147606582.jpg?w=1800&t=st=1724462537~exp=1724463137~hmac=d38e2af2e849e74aaab850a18f93a79d6f8efa8cf9a7db7a21211ffe79985a20);
   height: 100vh;
   width: 100vw;
   display: flex;
