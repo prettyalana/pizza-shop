@@ -49,6 +49,12 @@ h6 {
   align-items: center;
 }
 
+@media (max-width: 680px) {
+  h4 {
+    text-align: center;
+  }
+}
+
 a {
   color: black;
   margin: 20px;
@@ -68,6 +74,15 @@ a {
 nav a {
   margin: 80px;
   font-size: 1.5rem;
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+  }
 }
 
 .main-text {
@@ -100,8 +115,7 @@ textarea {
   width: 100%;
 }
 input {
-  width: 500px;
-  height: 50px;
+  width: 100%;
   font-size: 36px;
   padding: 1%;
   border-radius: 6px;
@@ -126,6 +140,11 @@ button {
   padding-top: 30px;
   background: wheat;
 }
+@media (max-width: 535px ) {
+  #form-container {
+    width: 100%;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -141,6 +160,9 @@ footer {
   padding: 5%;
   color: white;
   text-align: center;
+}
+.phone-number {
+  color: white;
 }
 .info {
   color: white;
@@ -240,3 +262,9 @@ ul {
   padding: 8px;
   flex-direction: row-reverse;
 }
+ @media(max-width: 1300px) {
+  video {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+ }
