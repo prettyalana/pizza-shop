@@ -76,9 +76,6 @@ nav a {
 
 @media (max-width: 560px) {
   .navbar {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     text-align: center;
   }
 }
@@ -157,7 +154,6 @@ footer {
   padding: 20px;
 }
 .footer-section {
-  /* height: 100px; */
   font-size: 20px;
   border: 0.5px solid wheat;
   border-radius: 12px;
@@ -206,6 +202,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 .tab button {
   background-color: inherit;
@@ -213,6 +210,18 @@ footer {
   cursor: pointer;
   padding: 12px 16px;
   transition: 0.3s;
+  width: 100%;
+}
+@media (max-width: 1090px) {
+  .tab button {
+    font-size: 1em;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    transition: 0.3s;
+    width: 80%;
+  }
 }
 .tab button:hover {
   background-color: wheat;
@@ -262,7 +271,7 @@ ul {
 }
 .menu-container::before {
   content: "";
-  background-image: url(https://img.freepik.com/free-photo/neapolitan-pizza-with-salami-arugula-tomatoes-sprinkled-with-cheese-wooden-board-tablecloth-cell_78826-2350.jpg?t=st=1724461509~exp=1724465109~hmac=f6ebb6034201fc572644e1b5c8e4f3c3544e59056ff0c89b94902e71fcbfb795&w=1800);
+  background-image: url(assets/neapolitan-pizza-with-salami-arugula-tomatoes-sprinkled-with-cheese-wooden-board-tablecloth-cell-with-place-text.jpg);
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,6 +287,15 @@ ul {
   display: flex;
   padding: 8px;
   flex-direction: row-reverse;
+}
+#search-label {
+  text-align: center;
+}
+#search-box {
+  width: 80%;
+}
+.menu-attribute {
+  color: wheat;
 }
 @media (max-width: 1300px) {
   video {
